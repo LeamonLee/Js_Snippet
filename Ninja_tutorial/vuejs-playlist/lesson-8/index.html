@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VueJS Tutorials</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>Keyboard Events</h1>
+            <label>Name:</label>
+            <!-- "v-model" represents two-way data-binding -->
+            <!-- So this is gonna attach the "name" variable with the value of input field.  -->
+            <!-- WHen user types in somehting in the input field, that somehting is gonna update the name variable automatically. -->
+            <input type="text" v-on:keyup.enter="logName" v-model="name" />
+            <span>{{ name }}</span>
+            <label>Age:</label>
+            <input type="text" v-on:keyup.alt.enter="logAge" v-model="age" />
+            <span>{{ age }}</span>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>

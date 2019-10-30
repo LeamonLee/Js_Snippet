@@ -1,0 +1,15 @@
+p{
+    width:50%;
+    margin:20px;
+    padding:30px;
+    border:2px solid #000;
+    background:#eff;
+}
+a{
+    width:40%;
+    margin:20px;
+    padding:30px;
+    border:2px solid #000;
+    background:#ddd;
+    display:inline-block;
+}

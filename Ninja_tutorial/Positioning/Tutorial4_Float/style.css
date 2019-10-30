@@ -1,0 +1,61 @@
+body{
+    background: #eee;
+}
+
+.wrapper{
+    background:#ddd;
+    max-width:960px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.wrapper:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
+
+img{
+    /* float:left; */
+    float:right;
+    margin:10px;
+}
+
+.blue{
+    background: blue;
+    float:right;
+}
+
+.red{
+    background:red;
+    float:right;
+}
+
+.green{
+    background:green;
+    /* float:right; */
+}
+
+.box{
+    height:100px;
+    /* By default, the block level element takes up 100% width. */
+    width:200px;
+}
+
+
+.service h2, .service p{
+    color:#999;
+    margin:10px 0;
+    text-align:center;
+}
+
+.service{
+    float:left;
+    background:#fff;
+    width:29.33%;
+    margin:1%;
+    padding:1%;
+    height:140px;
+}

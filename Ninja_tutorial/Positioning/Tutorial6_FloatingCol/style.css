@@ -1,0 +1,97 @@
+body{
+    background: #eee;
+}
+
+.wrapper{
+    background:#ddd;
+    max-width:960px;
+    margin:0 auto;
+    padding:20px;
+}
+
+.wrapper:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+
+
+img{
+    /* float:left; */
+    float:right;
+    margin:10px;
+}
+
+.blue{
+    background: blue;
+    float:right;
+}
+
+.red{
+    background:red;
+    float:right;
+}
+
+.green{
+    background:green;
+    /* float:right; */
+}
+
+.box{
+    height:100px;
+    /* By default, the block level element takes up 100% width. */
+    width:200px;
+}
+
+
+.service h2, .service p{
+    color:#999;
+    margin:10px 0;
+    text-align:center;
+}
+
+.service{
+    float:left;
+    background:#fff;
+    width:29.33%;
+    margin:1%;
+    padding:1%;
+    height:140px;
+}
+
+
+.content{
+    padding:10px;
+    /* Giving it a background color so we can see it takes up the space where the services block is. */
+    /* Because the services block is taken out of the normal document flow.  */
+    background:#fff;
+
+    /* Restart the normal document flow. But this doesn't work fully perfect when it comes to 'margin-top' property. */
+    clear:both;
+    /* margin-top:50px; */
+    margin: 20px 1%;
+}
+
+
+/* This method perfectly clears the floats and resumes the normal document flow. */
+/* Highly recommended */
+.services:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+section, aside{
+    float:left;
+    width:46%;
+    padding:1%;
+    margin:1%;
+    background:#ffe;
+}
+
+columns:after{
+    content:"";
+    display:block;
+    clear:both;
+}

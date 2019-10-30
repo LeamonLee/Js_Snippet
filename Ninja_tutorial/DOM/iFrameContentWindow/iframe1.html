@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iFrame1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function changeBackground(color){
+            document.body.style.background = color;
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- In this case, it's no difference if we write "window.parent.changeBackground" or just "parent.changeBackground" -->
+    <button type="button" onclick="window.parent.changeBackground('Aqua')">Aqua</button><br>
+    <button type="button" onclick="window.parent.changeBackground('Brown')">Brown</button><br>
+    <button type="button" onclick="window.parent.changeBackground('Orange')">Orange</button><br>
+    <button type="button" onclick="window.parent.changeBackground('#'+Math.floor(Math.random() * 16777215).toString(16))">Random</button><br>
+</body>
+</html>

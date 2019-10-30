@@ -1,0 +1,13 @@
+<div>
+  <mat-button-toggle #toggleBtn checked disableRipple>Toggle</mat-button-toggle>
+  {{ toggleBtn.checked }}
+</div>
+<div>
+  <!-- to reference this group vlaue, we need to assign it to a template reference variable -->
+  <mat-button-toggle-group multiple #toggleGroup="matButtonToggleGroup">
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{toggleGroup.value}}
+</div>

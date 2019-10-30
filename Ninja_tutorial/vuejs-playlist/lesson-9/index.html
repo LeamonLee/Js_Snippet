@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VueJS Tutorials</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <h1>Computed Properties</h1>
+            <button v-on:click="a++">Add to A</button>
+            <button v-on:click="b++">Add to B</button>
+            <p>A - {{ a }}</p>
+            <p>B - {{ b }}</p>
+            <!-- Everytime when the value of a or b changes, VueJs is gonna run the addToA/addToB function automatically. -->
+            <!-- Even if b doesn't change, as long as either of them changes, both functions run. -->
+            <!-- To make this more efficient, we only need to use "computed" instead of "methods" in app.js  -->
+            <!-- Also, if we use "computed" instead , we need to take away parenthesis() from calling method-->
+            <p>Age + A = {{ addToA }}</p>
+            <p>Age + B = {{ addToB }}</p>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>

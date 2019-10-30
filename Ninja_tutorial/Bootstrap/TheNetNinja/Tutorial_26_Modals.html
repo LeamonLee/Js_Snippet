@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" 
+    crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" 
+    crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar navbar-default">
+    <!-- <nav class="navbar navbar-inverse"> -->
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">AWESOME TRAINING</a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mydropdown">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Item1</a></li>
+                    <li><a href="#">Item2</a></li>
+                    <li><a href="#">Item3</a></li>
+                    <li><a href="#">Item4</a></li>
+                    <li><a href="#">Item5</a></li>
+                    <li><a href="#">Item6</a></li>
+                </ul>
+
+                <button class="btn btn-default navbar-btn navbar-right">Register</button>
+                <button class="btn btn-primary navbar-btn navbar-right" style="margin-left:10px;">Login</button>
+                <button class="btn btn-default navbar-btn navbar-right">
+                    Inbox <span class="badge">5</span>
+                </button>
+                <button class="btn btn-default navbar-btn navbar-right">
+                    Inbox <span class="label label-danger">5</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- data-ride="carousel" makes the carousel active. -->
+    <!-- class="slide" makes the slide more smooth -->
+    <!-- each item's active class makes its own active  -->
+    <div class="carousel slide" id="myCarouselSlider" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarouselSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarouselSlider" data-slide-to="1"></li>
+            <li data-target="#myCarouselSlider" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <div style="width:1024px; height:480px;">
+                    <img src="img/image1.jpg">
+                </div>
+                <div class="carousel-caption">
+                    <h2>Let's kick some coding ass!</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width:1024px; height:480px;">
+                    <img src="img/image2.jpg">
+                </div>
+                <div class="carousel-caption">
+                    <h2>Let's kick some coding ass!</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div style="width:1024px; height:480px;">
+                    <img src="img/image3.jpg">
+                </div>
+                <div class="carousel-caption">
+                    <h2>Let's kick some coding ass!</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow icons to go to next or previous page -->
+        <a class="left carousel-control" href="#myCarouselSlider" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarouselSlider" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+    
+
+    <br>
+
+    <!--     
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Navbars</h1>
+            <p>Liquorice dessert ice cream liquorice halvah jujubes caramels. 
+            Jelly-o muffin candy gingerbread. Gingerbread icing dessert dessert apple pie toffee icing. 
+            Icing muffin candy jelly beans. Pastry sesame snaps biscuit bonbon croissant icing. 
+            Caramels lemon drops sweet roll cupcake. Jelly toffee jelly beans sugar plum marzipan cake tiramisu sugar plum.
+            Candy canes lemon drops donut tart jelly-o cookie liquorice icing oat cake. 
+            Liquorice icing croissant. Cheesecake cookie ice cream macaroon. 
+            Dessert ice cream cake sesame snaps ice cream dragée donut candy canes caramels.
+            </p>
+        </div>
+    </div>
+    -->
+    
+    <div class="container" style="padding-bottom: 60px;">
+        <!-- <div class="row">
+            <div class="col-xs-12">
+                <div class="jumbotron">
+                    <h1>Navbars</h1>
+                    <p>Liquorice dessert ice cream liquorice halvah jujubes caramels. 
+                    Jelly-o muffin candy gingerbread. Gingerbread icing dessert dessert apple pie toffee icing. 
+                    Icing muffin candy jelly beans. Pastry sesame snaps biscuit bonbon croissant icing. 
+                    Caramels lemon drops sweet roll cupcake. Jelly toffee jelly beans sugar plum marzipan cake tiramisu sugar plum.
+                    Candy canes lemon drops donut tart jelly-o cookie liquorice icing oat cake. 
+                    Liquorice icing croissant. Cheesecake cookie ice cream macaroon. 
+                    Dessert ice cream cake sesame snaps ice cream dragée donut candy canes caramels.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- MODAL POPUP -->
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal">x</button>
+                        <h2 class="modal-title">How to be a badass ninja!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                           Enim ea similique distinctio odio officiis, 
+                           voluptatibus eveniet nulla architecto molestiae possimus asperiores necessitatibus nihil omnis quasi excepturi, 
+                           reprehenderit aspernatur alias itaque!
+                        </p>
+                    </div>
+                </div> <!-- end .modal-content -->
+            </div> <!-- end .modal-dialog -->
+        </div> <!-- end .modal -->
+
+        <!-- END MODAL  -->
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">                 <!-- Optional -->
+                        <h1 class="panel-title">Navbars</h1>    <!-- Optional -->
+                    </div>
+                    <div class="panel-body">
+                        <p>Liquorice dessert ice cream liquorice halvah jujubes caramels. 
+                        Jelly-o muffin candy gingerbread. Gingerbread icing dessert dessert apple pie toffee icing. 
+                        Icing muffin candy jelly beans.
+                        </p>
+                    </div>
+                    <div class="panel-footer">
+                        <!-- Also have to wirte a javascript function below -->
+                        <!-- data-placement can write 'bottom', too -->
+                        <a href="#"
+                           data-toggle="tooltip"
+                           data-placement="top"
+                           title="How to be a kick ass Ninja">More info...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Navbars</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p>Liquorice dessert ice cream liquorice halvah jujubes caramels. 
+                        Jelly-o muffin candy gingerbread. Gingerbread icing dessert dessert apple pie toffee icing. 
+                        Icing muffin candy jelly beans.
+                        </p>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="#" data-toggle="modal"
+                           data-target="#myModal">
+                           More Info...
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Navbars</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p>Liquorice dessert ice cream liquorice halvah jujubes caramels. 
+                        Jelly-o muffin candy gingerbread. Gingerbread icing dessert dessert apple pie toffee icing. 
+                        Icing muffin candy jelly beans.
+                        </p>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="#">More Info...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h1 class="panel-title">Navbars</h1>
+                    </div>
+                    <div class="panel-body">
+                        <p>Liquorice dessert ice cream liquorice halvah jujubes caramels. 
+                        Jelly-o muffin candy gingerbread. Gingerbread icing dessert dessert apple pie toffee icing. 
+                        Icing muffin candy jelly beans.
+                        </p>
+                    </div>
+                    <div class="panel-footer">
+                        <a href="#">More Info...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <h1>Navbars</h1>
+                <p>Liquorice dessert ice cream liquorice halvah jujubes caramels. 
+                Jelly-o muffin candy gingerbread. Gingerbread icing dessert dessert apple pie toffee icing. 
+                Icing muffin candy jelly beans.
+                </p>
+            </div>
+
+            <div class="col-xs-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Name</label>
+                        <input class="form-control" type="text" id="name" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email</label>
+                        <input class="form-control" type="text" id="email" placeholder="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-inline">
+                            <input type="checkbox">
+                            Ninja Training
+                        </label>
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox">
+                            Wizard Training
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="radio-inline">
+                            <input type="radio" name="gender">
+                            Male
+                        </label>
+
+                        <label class="radio-inline">
+                            <input type="radio" name="gender">
+                            Female
+                        </label>
+                    </div>
+
+                    <input type="submit" value="send" class="btn btn-default">
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <!-- Jquery -->
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" 
+    integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" 
+    crossorigin="anonymous"></script>
+
+    <script>
+        $(".nav li").on("click", function(){
+            $(".nav li").removeClass("active");
+            $(this).addClass("active");
+        });
+        
+        $(function(){
+            $("[data-toggle='tooltip']").tooltip();
+        });
+
+        $(function(){
+            $(".carousel").carousel({
+                interval: 3000,  // ms
+                pause:false,     // When your mouse hover over, stand still.
+                wrap:true,       // cycle through the images even if it's the last one.
+                keyboard:true,
+            });
+        });
+    </script>
+
+</body>
+</html>

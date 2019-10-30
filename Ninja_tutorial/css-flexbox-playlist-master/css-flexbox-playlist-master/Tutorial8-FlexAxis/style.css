@@ -1,0 +1,47 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+body{
+    background:#eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display:flex;                /* The default behavior of flex item is that they stack left to right */
+    background: #fff;
+    flex-wrap:wrap;              /* wrap-reverse, nowrap(default behavior) */
+    flex-flow:column;            /* row row-reverse column column-reverse */
+    justify-content: flex-end;   /* Justify-content only works on main-axis. So it basically depends on flex-flow */
+    height:800px;                /* Give it a height so that we can better see the how it works in y direction. */
+}
+
+.box{
+    height: 100px;
+    /* When we change the flex-flow direction, it also changes the flex-basis direction. */
+    /* In this case, if flex-flow is column, then flow-basis is height. */
+    flex:0 0 100px;
+}
+
+
+
+.one{
+    background: red;
+    
+}
+
+.two{
+    background:blue;
+    
+}
+
+.three{
+    background:green;
+    
+}

@@ -1,0 +1,103 @@
+*{
+  font-family: verdana;
+  margin: 0;
+}
+
+body{
+  background: #eee;
+}
+
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* menu base styles */
+
+nav{
+  background: #333;
+}
+
+nav ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a{
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+nav a:hover{
+  background-color: #555;
+}
+
+/* social menu base styles */
+
+a.tw{
+  background:url(img/tw.png) no-repeat center;
+  background-size:80%;
+}
+
+a.fb{
+  background:url(img/fb.png) no-repeat center;
+  background-size:80%;
+}
+
+.social a{
+  text-indent:-10000px;
+
+}
+
+.social{
+  max-width:80px;       /* Since we use the "flex" property on ul tag, it's gonna grow too big. So we limit the size here. */
+  margin:0 auto;        /* centralize the image on the smaller screen. But must override it again on larger screen below  */
+}
+
+
+/* flex styles */
+
+nav ul.social{
+  flex:1 1 0;
+
+  /* Also a flex-container when we're on the smaller screen device. 
+     SO that the "li" tag can stack left to right on each other.*/
+  display:flex;
+}
+
+nav ul.social li{
+  flex:1 1 0;
+}
+
+
+@media screen and (min-width: 768px){
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  flex: 1 1 0;
+}
+    
+nav{
+  /* If the nav becomes flex container, 
+  then the ul tag within it would become flex-item */
+  display:flex;
+  
+  /* If we want a navbar separated at two side, 
+  we can create two ul tags(flex-item) in a flex-container(in this case, nav it is.)
+  and space-between them.  */
+  justify-content: space-between;
+}
+
+.social{
+  margin:0;
+}
+
+} /* end media 768 */
+

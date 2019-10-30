@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JQuery Practice</title>
+		<style>
+		/*樣式設定的部分就先跳過，有興趣或疑問可以留言討論*/
+		.box {
+			width: 100px;
+			height: auto;
+			position: relative;
+			font-family: "微軟正黑體";
+			margin: 50px;
+			text-align: center;
+		}
+		.service {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			background: lightblue;
+			cursor: default;
+		}
+		.service p {
+			line-height: 100px;
+		}
+		.close {
+			position: absolute;
+			top: -20px;
+			right: -24px;
+			color: lightblue;
+			font-weight: bold;
+			font-size: 20px;
+			width: 20px;
+			height: 20px;
+			border: 1px solid;
+			border-radius: 20px;
+			line-height: 16px;
+			cursor: pointer;
+		}
+		</style>
+	</head>
+	<body>
+		<p onclick="$(this).hide();"> Click here!</p>
+		
+		<div class="box">
+			<div class="close">
+				<span> x </span>
+			</div>
+			<div class="service">
+				<p> 聯絡客服 </p>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="./lib/JQuery.js"></script>
+		<script type="text/javascript" src="./App.js"></script>
+	</body>
+</html>

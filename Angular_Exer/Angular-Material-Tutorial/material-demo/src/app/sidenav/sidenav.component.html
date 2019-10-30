@@ -1,0 +1,12 @@
+<mat-sidenav-container>
+  <!-- The default mode is 'over'. There's also another option called 'push' -->
+  <!-- sidenav is always hidden by default -->
+  <mat-sidenav #sidenav [(opened)]="opened" mode="side" (opened)="log('Opened')" (closed)="log('Closed')">Sidenav</mat-sidenav>
+  <mat-sidenav-content>
+    Main Content -
+    <button (click)="opened=!opened">ToggleOpened</button>
+    <button (click)="sidenav.open()">Open</button>
+    <button (click)="sidenav.close()">Close</button>
+    <button (click)="sidenav.toggle()">Toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

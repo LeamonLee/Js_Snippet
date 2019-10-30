@@ -1,0 +1,46 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+body{
+    background:#eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display:flex;                /* The default behavior of flex item is that they stack left to right */
+    background: #fff;
+    flex-wrap:wrap;              /* wrap-reverse, nowrap(default behavior) */   
+}
+
+.box{
+    height: 100px;
+    /* min-width:200px; */
+    /* flex-basis:300px;           Defines the starting width of each element */
+    /* flex: 1 0 200px;            flex-grow flex-shrink flex-basis */
+    /* flex:1                      flex-grow:1 flex-shrink:1 flex-basis:0 */
+}
+
+/* Flex-basis, even if the screen becomes smaller, flex-basis element would still behave like normal element to shrink */
+/* Whereas min-width would appear scroll-bar on the screen */
+
+.one{
+    background: red;
+    flex-basis:100px;
+}
+
+.two{
+    background:blue;
+    flex-basis:200px;
+}
+
+.three{
+    background:green;
+    flex-basis:000px;
+}

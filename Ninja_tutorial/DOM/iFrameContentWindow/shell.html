@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Shell</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script>
+        function changeBackground(color){
+            document.body.style.background = color;
+        }
+    </script>
+
+</head>
+<body bgcolor="#eeeeee">
+    <button type="button" onclick="changeBackground('Red')">Red</button>&nbsp;&nbsp;
+    <button type="button" onclick="changeBackground('Blue')">Blue</button>&nbsp;&nbsp;
+    <button type="button" onclick="changeBackground('Green')">Green</button>&nbsp;&nbsp;
+    <button type="button" onclick="changeBackground('Yellow')">Yellow</button>&nbsp;&nbsp;
+
+    <br>
+    <br>
+
+    <h1>iFrame1:</h1>
+    <iframe frameborder="0" scrolling="no" width="300" height="198"
+            src="iframe1.html" name="iframe1" id="iframe1">
+            <p>iframes are not supported by your browser.</p>
+    </iframe>
+
+    <br>
+    <br>
+    <br>
+    
+    <h1>iFrame2:</h1>
+    <iframe frameborder="0" scrolling="no" width="300" height="198"
+            src="iframe2.html" name="iframe2" id="iframe2">
+            <p>iframes are not supported by your browser.</p>
+    </iframe>
+
+    <br>
+
+</body>
+</html>

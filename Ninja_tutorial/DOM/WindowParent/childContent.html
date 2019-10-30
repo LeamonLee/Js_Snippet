@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Child page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Veniam esse fugit, cupiditate sapiente totam nemo.
+        Quia debitis accusamus odio doloremque. Et quasi quaerat perspiciatis
+        molestiae aut vitae placeat libero provident!
+    </p>
+    <!-- <script>console.log(window.parent)</script> -->
+    <script>
+        const parentDocument = window.parent.document;
+        const parentHeading = parentDocument.getElementById("heading");
+        // console.log(parentHeading);
+        const para = document.getElementById("para");
+        para.textContent = para.textContent + parentHeading.textContent;
+    </script>
+</body>
+</html> 
