@@ -1,0 +1,5 @@
+name, type, offset
+PY_Job_ID,String[20],0
+PY_Status,Int,22
+PY_TimeLeft,Real,24
+PY_finLength,Real,28

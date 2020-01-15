@@ -34,4 +34,4 @@ async function c(){
 }
 
 c()
-console.log("Main")
+console.log("Main thread keeps going...");
