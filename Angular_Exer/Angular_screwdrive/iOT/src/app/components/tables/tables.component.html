@@ -1,0 +1,47 @@
+<table id="table-data" class="h-100">
+    <tr>
+      <th>Time</th>
+      <th>ElapsedTime</th>
+      <th>RPM</th>
+      <th>ScrewLeft</th>
+      <th>Station</th>
+      <th>TightAglLowerLmt</th>
+      <th>TightAglUpperLmt</th>
+      <th>TightAngle</th>
+      <th>Torque</th>
+      <th>TorqueLowerLmt</th>
+      <th>TorqueUpperLmt</th>
+      <th>TotalAglLowerLmt</th>
+      <th>TotalAglUpperLmt</th>
+      <th>TotalAngle</th>
+      <th>Direction</th>
+      <th>Finish</th>
+      <th>Report</th>
+      <th>Status</th>
+      <th>Temperature</th>
+      <th>TorqueUnit</th>
+    </tr>
+    <tr *ngFor="let item of data">
+      <td>{{ item.time | date:'short' }}</td>
+      <td>{{ item.nElapsedTime }}</td>
+      <td>{{ item.nRPM }}</td>
+      <td>{{ item.nScrewLeft }}</td>
+      <td>{{ item.nStation }}</td>
+      <td>{{ item.nTightAglLowerLmt }}</td>
+      <td>{{ item.nTightAglUpperLmt }}</td>
+      <td>{{ item.nTightAngle }}</td>
+      <td>{{ item.nTorque }}</td>
+      <td>{{ item.nTorqueLowerLmt }}</td>
+      <td>{{ item.nTorqueUpperLmt }}</td>
+      <td>{{ item.nTotalAglLowerLmt }}</td>
+      <td>{{ item.nTotalAglUpperLmt }}</td>
+      <td>{{ item.nTotalAngle }}</td>
+      <td>{{ item.snDirection }}</td>
+      <td>{{ item.snFinish }}</td>
+      <td>{{ item.snReport }}</td>
+      <td>{{ item.snStatus }}</td>
+      <td>{{ item.snTemperature }}</td>
+      <td>{{ item.snTorqueUnit }}</td>
+    </tr>
+  </table>
+
