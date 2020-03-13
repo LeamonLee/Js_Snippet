@@ -148,6 +148,99 @@ function test7(){
     });
 }
 
+
+function test8(){
+    return new Promise((resolve, reject) =>{
+        Promise.resolve('foo')
+        // 1. Receive "foo" concatenate "bar" to it and resolve that to the next then
+        .then(function(string) {
+            return new Promise(function(resolve, reject) {
+                setTimeout(function() {
+                    string += 'bar';
+                    console.log("First then: ", string);
+                    resolve(string);
+                }, 1);
+            });
+        })
+        .then(function(string) {
+            return new Promise((resolve, reject)=>{
+                setTimeout(function() {
+                    string += 'baz';
+                    console.log("Second then: ", string);
+                    resolve(string);
+                }, 1)
+            });
+        })
+        .then(function(string) {
+            // return new Promise((resolve, reject)=>{
+            //     console.log("Third Then: ", string);
+            //     resolve(string);
+            // });
+
+            console.log("Third Then: ", string);
+            resolve(string);
+        });
+    });
+    
+}
+
+function test9(){
+    return new Promise((resolve, reject) =>{
+        Promise.resolve('foo')
+        .then(function(string) {
+            
+            setTimeout(function() {
+                string += 'bar';
+                console.log("First then: ", string);
+                return string;
+            }, 1);
+            
+        })
+        .then(function(string) {
+            
+            setTimeout(function() {
+                string += 'baz';
+                console.log("Second then: ", string);
+                return string;
+            }, 1);
+            
+        })
+        .then(function(string) {
+            
+            console.log("Third Then: ", string);
+            resolve(string);
+        });
+    });
+    
+}
+
+function test10(){
+    return new Promise((resolve, reject) =>{
+        Promise.resolve('foo')
+        .then(function(string) {
+            
+            string += 'bar';
+            console.log("First then: ", string);
+            return string;
+            
+        })
+        .then(function(string) {
+            
+            string += 'baz';
+            console.log("Second then: ", string);
+            return string;
+            
+        })
+        .then(function(string) {
+            
+            console.log("Third Then: ", string);
+            resolve(string);
+        });
+    });
+    
+}
+
+
 async function testError(){
     let result1 = await delayedSub(3,4,2000);
     // let result2 = await delayedAdd(1,2,1000);
@@ -184,14 +277,26 @@ async function isSerialIDValid (){
 }
 
 // test2();
-test3()
-.then((result) => console.log("Main flow result: ", result))
-.catch((err) => console.log("Main flow result: ", err));
+// test3()
+// .then((result) => console.log("Main flow result: ", result))
+// .catch((err) => console.log("Main flow result: ", err));
 
 // test4();
 // test5();
 // test6();
 // test7();
+
+// test8()
+// .then((result) => console.log("Main flow result: ", result))
+// .catch((err) => console.log("Main flow result: ", err));
+
+// test9()
+// .then((result) => console.log("Main flow result: ", result))
+// .catch((err) => console.log("Main flow result: ", err));
+
+test10()
+.then((result) => console.log("Main flow result: ", result))
+.catch((err) => console.log("Main flow result: ", err));
 // testError();
 
 // let isValid = isSerialIDValid();
