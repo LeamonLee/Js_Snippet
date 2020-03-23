@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script> -->
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <canvas id="cvs" width="800" height="600" style="border:1px solid #000"></canvas>
+
+    <script>
+        window.onload = function(){
+            var cvs = document.getElementById("cvs");
+            var ctx = cvs.getContext("2d");
+
+            // fill 填滿
+            ctx.fillStyle = "#f00";         /* or "red" */
+            ctx.globalAlpha = 0.5;
+            ctx.fillRect(50,50, 100, 100);
+
+            // stroke 描邊
+            ctx.globalAlpha = 1;
+            ctx.strokeStyle = "blue";
+            ctx.strokeRect(200,200, 100,100);
+
+            // path 路徑
+            ctx.beginPath();
+            ctx.moveTo(300,300);       // 移動在畫布當前的位置
+            ctx.lineTo(400,400);       // 一條線
+            ctx.closePath();
+            ctx.stroke();               // 採用描邊的style。 Also can use ctx.fill()
+
+            // 利用path畫多邊形
+            ctx.beginPath();
+            ctx.moveTo(500,500);
+            ctx.lineTo(600, 750);
+            ctx.lineTo(500, 800);
+            ctx.closePath();
+            ctx.fill();
+
+
+        };
+    </script>
+</body>
+</html>
